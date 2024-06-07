@@ -18,7 +18,7 @@ book:
   comments:
     hypothesis: true
     giscus:
-      repo: ten-z/PGRTestBook
+      repo: jhmaindonald/Rcode
 
   chapters:
     - index.qmd
@@ -27,9 +27,9 @@ book:
     - ch3.qmd
     - ch4.qmd
     - ch5.qmd
-    # - ch6.qmd
-    # - ch7.qmd
-    # - ch8.qmd
+    - ch6.qmd
+    - ch7.qmd
+    - ch8.qmd
     - ch9.qmd
     - Appendix.qmd
   
@@ -40,17 +40,17 @@ book:
     left:
       - text: "Code and Supplements"
         menu: 
-          - text: "Supplements"
-            href: https://ten-z.github.io/SupplementsTest/
+          - text: "Code Supplements"
+            href: https://jhmaindonald.github.io/PGRcode/
           - text: "Answers to selected exercises"
             href: https://jhmaindonald.github.io/PGRselected/
           - text: "Afterword"
-            href: https://ten-z.github.io/SupplementsTest/afterword.html
+            href: https://jhmaindonald.github.io/PGRcode/afterword.html
             
       - text: "Practical Guide"
-        href: https://ten-z.github.io/SupplementsTest/about.html
+        href: https://jhmaindonald.github.io/PGRcode/about.html
       - text: "Blog"
-        href: https://ten-z.github.io/SupplementsTest/blog.html
+        href: https://jhmaindonald.github.io/PGRcode/blog.html
       - text: "R code"
         href: index.qmd
         
@@ -58,13 +58,13 @@ book:
       - text: "Resources"
         menu:
           - text: "Ways to Use Code"
-            href: https://ten-z.github.io/SupplementsTest/RunningCode.html
+            href: https://jhmaindonald.github.io/PGRcode/RunningCode.html
           - text: "Code for Selected Figures"
-            href: https://ten-z.github.io/SupplementsTest/figFuns.html
+            href: https://jhmaindonald.github.io/PGRcode/figFuns.html
           - text: "Download PDF"
-            href: https://ten-z.github.io/PGRTestBook/R-Code-for--A-Practical-Guide-.-.-.-.pdf
+            href: https://jhmaindonald.github.io/PGRcode/R-Code-for--A-Practical-Guide-.-.-.-.pdf
           - text: "Download Docx"
-            href: https://ten-z.github.io/PGRTestBook/R-Code-for--A-Practical-Guide-.-.-.-.docx
+            href: https://jhmaindonald.github.io/PGRcode/R-Code-for--A-Practical-Guide-.-.-.-.docx
 
 bibliography: references.bib
 

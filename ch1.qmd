@@ -1795,10 +1795,10 @@ writeLines(txt, con="/Users/johnm1/pkgs/PGRcode/inst/doc/ch1.R")
 
 ```{=html}
 <script src="https://giscus.app/client.js"
-        data-repo="ten-z/PGRTestBook"
-        data-repo-id="R_kgDOMEfiPg"
+        data-repo="jhmaindonald/Rcode"
+        data-repo-id="R_kgDOMGD96g"
         data-category="Announcements"
-        data-category-id="DIC_kwDOMEfiPs4Cf5L1"
+        data-category-id="DIC_kwDOMGD96s4Cf6-v"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
