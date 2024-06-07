@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
   
   preview: 
     port: 33333
@@ -10,9 +11,9 @@ project:
 book:
   title: "R Code for 'A Practical Guide . . .'"
   author: "John Maindonald"
-  date: "2024-06-02"
+  date: "2024-06-08"
   downloads: [pdf, docx]
-  repo-url: https://github.com/jhmaindonald/code/
+  repo-url: https://github.com/jhmaindonald/Rcode/
   
   comments:
     hypothesis: true
@@ -37,7 +38,7 @@ book:
     title: false
     
     left:
-      - text: "Code and Supplements"
+      - text: "main"
         menu: 
           - text: "Code Supplements"
             href: https://jhmaindonald.github.io/PGRcode/
