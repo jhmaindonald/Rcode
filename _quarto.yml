@@ -38,9 +38,9 @@ book:
     title: false
     
     left:
-      - text: "main"
+      - text: "Main"
         menu: 
-          - text: "Code Supplements"
+          - text: "Code and Supplements"
             href: https://jhmaindonald.github.io/PGRcode/
           - text: "Answers to selected exercises"
             href: https://jhmaindonald.github.io/PGRselected/
