@@ -1,5 +1,5 @@
 ---
-title: "Chapter 8: Tree-based Classification and Regression"
+title: "Tree-based Classification and Regression"
 output: 
   html_document: default
   pdf_document:
@@ -30,7 +30,7 @@ library(knitr)
 ## opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 DAAG latticeExtra plot rpart rpart.plot MASS ggplot2 car randomForest
 
@@ -50,11 +50,7 @@ opts_chunk[['set']](cache.path='cache-', out.width="80%", fig.align="center",
 suppressPackageStartupMessages(library(latticeExtra))
 ```
 
-##### When are tree-based methods appropriate?
-
 ### Section 8.1: Tree-based methods --- uses and basic notions
-
-##### Examples that will be used to demonstrate the methodology
 
 #### Subsection 8.1.1: Detecting email spam\~-- an initial look
 
@@ -119,8 +115,6 @@ rpart.plot::rpart.plot(u.tree, type=0, under=TRUE, branch.lwd=0.25,
 
 ```{r 8_3, eval=FALSE}
 ```
-
-##### Choosing the split\~-- regression trees
 
 #### Subsection 8.2.1: Within and between sums of squares
 
@@ -307,10 +301,6 @@ for(i in 1:100)
 acctree.mat[i,] <- DAAG::compareTreecalcs(data=spam7, fun="rpart")
 ```
 
-##### How is the standard error calculated?
-
-##### When are tree-based methods appropriate?
-
 ### Section 8.4: From one tree to a forest -- a more global optimality
 
 ```{r H4_1a}
@@ -406,15 +396,9 @@ for(i in 1:100)acctree.mat[i,] <- DAAG::compareTreecalcs(data=spam7,
 ## Panel B: Plot `rptest` against `rftest`
 ```
 
-##### Times required for computation
-
 #### Subsection 8.5.2: Tree-based methods, versus other approaches
 
-##### Tree-based methods may usefully complement other approaches
-
 #### Subsection 8.5.3: Further notes
-
-##### Pruning as variable selection
 
 ### Section 8.6: Further reading and extensions
 

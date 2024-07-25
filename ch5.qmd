@@ -1,5 +1,5 @@
 ---
-title: "Chapter 5: Generalized linear models and survival analysis"
+title: "Generalized linear models and survival analysis"
 output: 
   html_document: default
   pdf_document:
@@ -31,7 +31,7 @@ opts_chunk[['set']](fig.width=5, fig.height=5, comment=NA, eval=F)
 ## opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (with dependencies)
+### Packages required (with dependencies)
 
 DAAG car mgcv colorspace HistData gamlss dplyr tidyr MASS ggplot2 latticeExtra qgam VGAM survival HistData
 
@@ -86,8 +86,6 @@ mtext(side = 3, line = 0.5, "C: SD[logit(p)]", adj=0, cex=1.0)
 #### Subsection 5.1.2: Noise terms need not be normal
 
 #### Subsection 5.1.3: Variation that is greater than binomial or Poisson
-
-##### Least squares versus logistic regression
 
 #### Subsection 5.1.4: Log odds in contingency tables
 
@@ -224,8 +222,6 @@ mtext(side=3, line=4.5, "B: Pairs plot, difference/sum variables", cex=1.25, at=
       adj=0, col="gray40")
 par(oldpar)
 ```
-
-##### Implications for the Variance Inflation Factor
 
 #### Subsection 5.2.1: Choose explanatory terms, and fit model
 
@@ -749,10 +745,6 @@ update(gph+as.layer(gph1)+as.layer(gph2), par.settings=DAAG::DAAGtheme(color=TRU
 ### Section 5.6 Additional notes on generalized linear models
 
 #### Subsection 5.6.1: Residuals, and estimating the dispersion
-
-##### Other choices of link function for binomial models
-
-##### Quasi models --- estimating the dispersion
 
 #### Subsection 5.6.2: Standard errors and $z$- or $t$-statistics for binomial models
 

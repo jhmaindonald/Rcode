@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Code for ‘A Practical Guide . . .’ - 5&nbsp; Chapter 5: Generalized linear models and survival analysis</title>
+<title>R Code for ‘A Practical Guide . . .’ - 5&nbsp; Generalized linear models and survival analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -238,7 +238,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Generalized linear models and survival analysis</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generalized linear models and survival analysis</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -259,55 +259,55 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Learning from data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Learning from data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Generalizing from models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalizing from models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Multiple linear regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multiple linear regression</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Exploiting the linear model framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploiting the linear model framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch5.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Generalized linear models and survival analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generalized linear models and survival analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: Time series models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Time series models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Multilevel models, and repeated measures</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multilevel models, and repeated measures</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Tree-based Classification and Regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tree-based Classification and Regression</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Multivariate data exploration and discrimination</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Multivariate data exploration and discrimination</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -326,7 +326,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section-5.1-generalized-linear-models" id="toc-section-5.1-generalized-linear-models" class="nav-link active" data-scroll-target="#section-5.1-generalized-linear-models">Section 5.1 Generalized linear models</a></li>
+  <li><a href="#packages-required-with-dependencies" id="toc-packages-required-with-dependencies" class="nav-link active" data-scroll-target="#packages-required-with-dependencies">Packages required (with dependencies)</a></li>
+  <li><a href="#section-5.1-generalized-linear-models" id="toc-section-5.1-generalized-linear-models" class="nav-link" data-scroll-target="#section-5.1-generalized-linear-models">Section 5.1 Generalized linear models</a></li>
   <li><a href="#section-5.2-logistic-multiple-regression" id="toc-section-5.2-logistic-multiple-regression" class="nav-link" data-scroll-target="#section-5.2-logistic-multiple-regression">Section 5.2 Logistic multiple regression</a></li>
   <li><a href="#section-5.3-logistic-models-for-categorical-data-an-example" id="toc-section-5.3-logistic-models-for-categorical-data-an-example" class="nav-link" data-scroll-target="#section-5.3-logistic-models-for-categorical-data-an-example">Section 5.3 Logistic models for categorical data – an example</a></li>
   <li><a href="#section-5.4-models-for-counts-poisson-quasipoisson-and-negative-binomial" id="toc-section-5.4-models-for-counts-poisson-quasipoisson-and-negative-binomial" class="nav-link" data-scroll-target="#section-5.4-models-for-counts-poisson-quasipoisson-and-negative-binomial">Section 5.4 Models for counts — poisson, quasipoisson, and negative binomial</a></li>
@@ -345,7 +346,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Generalized linear models and survival analysis</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generalized linear models and survival analysis</span></h1>
 </div>
 
 
@@ -377,8 +378,8 @@ window.Quarto = {
 }
 </style>
 </div>
-<section id="packages-required-with-dependencies" class="level5">
-<h5 class="anchored" data-anchor-id="packages-required-with-dependencies">Packages required (with dependencies)</h5>
+<section id="packages-required-with-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="packages-required-with-dependencies">Packages required (with dependencies)</h3>
 <p>DAAG car mgcv colorspace HistData gamlss dplyr tidyr MASS ggplot2 latticeExtra qgam VGAM survival HistData</p>
 <p>Additionally, knitr is required in order to process the Rmd source file.</p>
 </section>
@@ -429,9 +430,6 @@ window.Quarto = {
 </section>
 <section id="subsection-5.1.3-variation-that-is-greater-than-binomial-or-poisson" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-5.1.3-variation-that-is-greater-than-binomial-or-poisson">Subsection 5.1.3: Variation that is greater than binomial or Poisson</h4>
-<section id="least-squares-versus-logistic-regression" class="level5">
-<h5 class="anchored" data-anchor-id="least-squares-versus-logistic-regression">Least squares versus logistic regression</h5>
-</section>
 </section>
 <section id="subsection-5.1.4-log-odds-in-contingency-tables" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-5.1.4-log-odds-in-contingency-tables">Subsection 5.1.4: Log odds in contingency tables</h4>
@@ -509,9 +507,6 @@ window.Quarto = {
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>frogs <span class="ot">&lt;-</span> <span class="fu">within</span>(frogs, {maxSubmin <span class="ot">&lt;-</span> meanmax<span class="sc">-</span>meanmin</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>                        maxAddmin <span class="ot">&lt;-</span> meanmax<span class="sc">+</span>meanmin})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="implications-for-the-variance-inflation-factor" class="level5">
-<h5 class="anchored" data-anchor-id="implications-for-the-variance-inflation-factor">Implications for the Variance Inflation Factor</h5>
-</section>
 <section id="subsection-5.2.1-choose-explanatory-terms-and-fit-model" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-5.2.1-choose-explanatory-terms-and-fit-model">Subsection 5.2.1: Choose explanatory terms, and fit model</h4>
 <div class="cell">
@@ -955,12 +950,6 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="section-5.6-additional-notes-on-generalized-linear-models">Section 5.6 Additional notes on generalized linear models</h3>
 <section id="subsection-5.6.1-residuals-and-estimating-the-dispersion" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-5.6.1-residuals-and-estimating-the-dispersion">Subsection 5.6.1: Residuals, and estimating the dispersion</h4>
-<section id="other-choices-of-link-function-for-binomial-models" class="level5">
-<h5 class="anchored" data-anchor-id="other-choices-of-link-function-for-binomial-models">Other choices of link function for binomial models</h5>
-</section>
-<section id="quasi-models-estimating-the-dispersion" class="level5">
-<h5 class="anchored" data-anchor-id="quasi-models-estimating-the-dispersion">Quasi models — estimating the dispersion</h5>
-</section>
 </section>
 <section id="subsection-5.6.2-standard-errors-and-z--or-t-statistics-for-binomial-models" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-5.6.2-standard-errors-and-z--or-t-statistics-for-binomial-models">Subsection 5.6.2: Standard errors and <span class="math inline">\(z\)</span>- or <span class="math inline">\(t\)</span>-statistics for binomial models</h4>
@@ -1613,13 +1602,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <input type="hidden" id="giscus-alt-theme" value="dark">
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./ch4.html" class="pagination-link  aria-label=" &lt;span="" 4:="" exploiting="" the="" linear="" model="" framework&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Exploiting the linear model framework</span></span>
+      <a href="./ch4.html" class="pagination-link  aria-label=" &lt;span="" the="" linear="" model="" framework&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploiting the linear model framework</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch6.html" class="pagination-link" aria-label="<span class='chapter-number'>6</span>&nbsp; <span class='chapter-title'>Chapter 6: Time series models</span>">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: Time series models</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch6.html" class="pagination-link" aria-label="<span class='chapter-number'>6</span>&nbsp; <span class='chapter-title'>Time series models</span>">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Time series models</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

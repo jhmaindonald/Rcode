@@ -1,5 +1,5 @@
 ---
-title: "Chapter 3: Multiple linear regression"
+title: "Multiple linear regression"
 output: 
   html_document: default
   pdf_document:
@@ -29,7 +29,7 @@ library(knitr)
 opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 DAAG car MASS AICcmodavg leaps BayesFactor splines
 
@@ -170,8 +170,6 @@ par(oldpar)
 
 ```{r 3_3, eval=F}
 ```
-
-##### What is special about logarithmic transformations?
 
 #### Subsection 3.2.2: An equation that predicts dist/time
 
@@ -340,19 +338,11 @@ summary(lm(brainwt ~ lsize + bodywt, data = litters), digits=3)$coef
 
 #### Subsection 3.2.6: Issues for causal interpretation
 
-##### Effects of lifestyle on health
-
-##### The studies mostly agree. But what do they say?
-
-##### Adjusting for confounders
-
 ### Section 3.3 Choosing the model, and checking it out
 
-##### Effects of lifestyle on health
+#### Subsection 3.3.1 Criteria for moddel choice
 
-##### The studies mostly agree. But what do they say?
-
-##### Adjusting for confounders
+#### Subsection 3.3.2 Plots that show the contribution of individual terms
 
 ```{r C3_2a}
 oddbooks.lm <- lm((weight) ~ log(thick)+log(height)+log(breadth),
@@ -379,8 +369,6 @@ summary(car::powerTransform(nihr[, c("dist", "gradient")]), digits=3)
 form <- mph ~ log(dist) + log(gradient)
 summary(car::powerTransform(form, data=nihr))
 ```
-
-##### The use of transformations --- further comments
 
 #### Subsection 3.3.4: Accuracy estimates, fitted values and new observations
 
@@ -499,8 +487,6 @@ plot(power.lm, cex.caption=0.85, fg="gray",
 
 #### Subsection 3.3.6: Strategies for fitting models --- suggested steps
 
-##### Diagnostic checks
-
 ### Section 3.4 Robust regression, outliers, and influence
 
 #### Subsection 3.4.1: Making outliers obvious --- robust regression
@@ -544,8 +530,6 @@ mtext(side=3, line=0.75, "B: Resistant (lqs) fit", adj=0, cex=1.1)
 ## plot(lhills2k.lm, which=2)
 ```
 
-##### Outliers, influential or not, should be taken seriously
-
 #### Subsection 3.4.2: Leverage, influence, and Cook's distance
 
 ##### $^*$ Leverage and the hat matrix --- technical details
@@ -553,8 +537,6 @@ mtext(side=3, line=0.75, "B: Resistant (lqs) fit", adj=0, cex=1.1)
 ```{r C4_2a}
 round(unname(hatvalues(timeClimb.lm)),2)
 ```
-
-##### Influential points and Cook's distance
 
 ##### Dynamic graphics
 
@@ -736,16 +718,6 @@ update(gph, par.settings=list(fontsize=list(text=8, points=5)))
 
 `{r 3_18, eval=F|`
 
-##### What is the scatter about the fitted response
-
-##### Model selection and tuning risks
-
-##### Generalization to new contexts requires a random sample of contexts
-
-##### What happens if we do not transform the hillrace data?
-
-##### Are "errors in x" an issue?
-
 ### Section 3.6 Problems with many explanatory variables
 
 #### Subsection 3.6.1: Variable selection issues
@@ -785,10 +757,6 @@ mtext(side=1, line=1.75, "Number selected from")
 
 ```{r 3_20, eval=F}
 ```
-
-##### Cross-validation that accounts for the variable selection process
-
-##### \*Regularization approaches
 
 #### Subsection 3.6.2: Multicollinearity
 
@@ -893,11 +861,7 @@ print(coef(summary(coxiteR.lm)), digits=2)
 print(DAAG::vif(lm(porosity ~ .-E, data=coxiteR)), digits=2)
 ```
 
-##### Remedies for multicollinearity
-
 ### Section 3.7 Errors in x
-
-##### Measurement of dietary intake
 
 ##### Simulations of the effect of measurement error
 
@@ -913,8 +877,6 @@ update(gph, par.settings=parset)
 ```{r 3_22, eval=F}
 ```
 
-##### \*Two explanatory variables
-
 ##### Two explanatory variables, one measured without error -- a simulation
 
 ```{r 3_23, echo=FALSE, w=5, h=2.7, out.width="80%"}
@@ -929,12 +891,6 @@ update(gph, par.settings=parset)
 ```{r 3_23, eval=F}
 ```
 
-##### An arbitrary number of variables
-
-##### \*The classical error model versus the Berkson error model
-
-##### Using missing value approaches to address measurement error
-
 ### Section 3.8 Multiple regression models -- additional points
 
 ```{r C8_1a}
@@ -942,8 +898,6 @@ coef(lm(area ~ volume + weight, data=allbacks))
 b <- as.vector(coef(lm(weight ~ volume + area, data=allbacks)))
 c("_Intercept_"=-b[1]/b[3], volume=-b[2]/b[3], weight=1/b[3])
 ```
-
-##### Unintended correlations
 
 #### Subsection 3.8.2: Missing explanatory variables
 
@@ -968,8 +922,6 @@ scales=list(cex=1.0, tck=0.35))
 
 ```{r 3_24, eval=F}
 ```
-
-##### Strategies
 
 #### Subsection 3.8.3: Added variable plots
 
@@ -1026,8 +978,6 @@ mtext(side=3, line=0.5, "C: From AVP", adj=-0, cex=0.85)
 
 ```{r 3_26, eval=F}
 ```
-
-##### Alternatives to Added Variable Plots
 
 ##### \*Algebraic details
 

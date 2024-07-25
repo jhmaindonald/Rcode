@@ -1,5 +1,5 @@
 ---
-title: "Chapter 7: Multilevel models, and repeated measures"
+title: "Multilevel models, and repeated measures"
 output: 
   html_document: default
   pdf_document:
@@ -30,7 +30,7 @@ library(knitr)
 ## opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 DAAG lme4 afex MASS utils devtools qra glmmTMB DHARMa MEMSS forecast splines gamlss plotrix nlme
 
@@ -69,21 +69,7 @@ ant111b.aov <- aov(harvwt ~ 1 + Error(site), data=ant111b)
 summary(ant111b.aov)
 ```
 
-##### Interpreting the mean squares
-
-##### Details of the calculations
-
-##### Practical use of the analysis of variance results
-
-##### Random effects vs. fixed effects
-
-##### Nested factors -- a variety of applications
-
 #### Subsection 7.1.1: A More Formal Approach
-
-##### Relations between variance components and mean squares
-
-##### Interpretation of variance components
 
 ##### Intra-class correlation
 
@@ -143,8 +129,6 @@ update(gph, scales=list(tck=0.5), ylab="Normal deviate")
 
 ```{r 7_2, eval=F}
 ```
-
-##### Modeling more than two levels of random variation
 
 ### Section 7.3 Survey data, with clustering
 
@@ -499,8 +483,6 @@ print(update(gphB, main=mainB, xlab=""), position=c(0,0,1,0.52))
 ```{r 7_8, eval=F}
 ```
 
-##### Model fitting criteria
-
 #### Subsection 7.5.1: Model selection
 
 ```{r G5_1a}
@@ -554,8 +536,6 @@ with(tinting, table(sex[subs], agegp[subs]))
 ```{r G6_1a}
 ## devtools::install_github("jhmaindonald/qra")  # Use if not found on CRAN
 ```
-
-##### Notation
 
 ##### Source of data
 
@@ -762,8 +742,6 @@ LTbin.cll <- qra::extractLT(p=0.99, obj=HCbin.cll,
 rownames(LTbin.cll) <- shorten(rownames(LTbin.cll))
 ```
 
-##### A warning against over-interpretation
-
 ### Section 7.7 Observation level random effects --- the `moths` dataset
 
 ```{r G7a}
@@ -799,12 +777,6 @@ detach("package:glmmTMB", character.only=TRUE)
 ```
 
 ### Section 7.8 Repeated measures in time
-
-##### The theory of repeated measures modeling
-
-##### \*Correlation structure
-
-##### Different approaches to repeated measures analysis
 
 #### Subsection 7.8.1: Example -- random variation between profiles
 
@@ -986,15 +958,11 @@ orthdiff.lme <- lme(logdist ~ Sex * scAge, random = ~1|Subject,
 orthdiff.lme$modelStruct$corStruct
 ```
 
-##### \*The variance for the difference in slopes
-
 ### Section 7.9: Further notes on multilevel models
 
 #### Subsection 7.9.1: Sources of variation -- complication or focus of interest?
 
 #### Subsection 7.9.2: Predictions from models with a complex error structure
-
-##### Consequences from assuming an overly simplistic error structure
 
 #### Subsection 7.9.3: An historical perspective on multilevel models
 

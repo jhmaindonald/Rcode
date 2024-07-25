@@ -1,5 +1,5 @@
 ---
-title: "Chapter 1: Learning from data"
+title: "Learning from data"
 output: 
   html_document: default
   pdf_document:
@@ -46,15 +46,12 @@ Hmisc::knitrSet(basename="intro", fig.path="figs/g", lang="markdown")
 oldopt <- options(digits=4, formatR.arrow=FALSE, width=70, scipen=999)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 latticeExtra (lattice is a dependency); DAAG; car; MASS; AICcmodavg; BayesFactor; boot; MPV; ggplot2; tidyr
 
 Additionally, knitr and Hmisc are required in order to process the Rmd source file. The prettydoc package is by default used to format the html output.
 
-##### Chapter summary
-
-##### A note on terminology --- variables, factors, and more!
 
 ### Section 1.1: Questions, and data that may point to answers
 
@@ -76,8 +73,6 @@ set.seed(366)
 split(sample(seq(1:10)), rep(c("Control","Treatment"), 5))
 # sample(1:10) gives a random re-arrangement (permutation) of 1, 2, ..., 10
 ```
-
-##### Cluster sampling
 
 ##### \*A note on with-replacement samples
 
@@ -134,27 +129,9 @@ dotplot(species ~ length, data=cuckoos, alpha=0.4, xlab="Length of egg (mm)") +
 
 #### Subsection 1.1.3: Planning for a statistical analysis
 
-##### Understand the data
-
-##### Causal inference
-
-##### What was measured? Is it the relevant measure?
-
-##### Use relevant prior information in the planning stages
-
-##### Subject area knowledge and judgments
-
-##### The importance of clear communication
-
-##### Data-based selection of comparisons
-
-##### Models must be fit for their intended use
-
 #### Subsection 1.1.4: Results that withstand thorough and informed challenge
 
 #### Subsection 1.1.5: Using graphs to make sense of data
-
-##### Graphical comparisons
 
 #### Subsection 1.1.6: Formal model-based comparison
 
@@ -446,18 +423,6 @@ legend("topleft", col=c('blue','red'),lty=c(1,1), lwd=1, cex=0.9,
 
 #### Subsection 1.2.8: What to look for in plots
 
-##### Outliers
-
-##### Asymmetry of the distribution
-
-##### Changes in variability
-
-##### Clustering
-
-##### Nonlinearity
-
-##### Time trends in the data
-
 ### Section 1.3: Data Summary
 
 #### Subsection 1.3.1: Counts
@@ -543,8 +508,6 @@ names(kiwimeans) <- c("block","shade","meanyield")
 head(kiwimeans, 4)  # First 4 rows
 ```
 
-##### The benefits of data summary -- dengue status example
-
 #### Subsection 1.3.3: Measures of variation
 
 ##### Cuckoo eggs example
@@ -556,8 +519,6 @@ z <- with(cuckoos, sapply(split(length,species), function(x)c(sd(x),length(x))))
 print(setNames(paste0(round(z[1,],2)," (",z[2,],")"),
                abbreviate(colnames(z),11)), quote=FALSE)
 ```
-
-##### Degrees of freedom
 
 #### Subsection 1.3.4: Inter-quartile range (IQR) and median absolute deviation (MAD)
 
@@ -657,8 +618,6 @@ set.seed(23286)  # Use to reproduce the sample below
 rbinom(15, size=1, p=0.5)
 ```
 
-##### Means and variances
-
 #### Subsection 1.4.2: Continuous distributions
 
 ```{r 1_13, w=4, h=3.6, ps=12, left=-2, mgp=c(2.0,0.5,0), tcl=-0.3, echo=FALSE}
@@ -703,8 +662,6 @@ setNames(qnorm(c(.5,.841,.975)), nm=c(.5,.841,.975))
 qnorm(c(.1,.2,.3))   # -1.282 -0.842 -0.524  (10th, 20th and 30th percentiles)
 qnorm(.1, mean=100, sd=10)  # 87.2 (10th percentile, mean=100, SD=10)
 ```
-
-##### Different ways to represent distributions
 
 ##### Generating simulated samples from the normal and other continuous distributions
 
@@ -826,10 +783,6 @@ print(update(gph, scales=list(tck=0.4), layout = c(3,1),
 
 ```{r 1_16, eval=F}
 ```
-
-##### The standard error of the median
-
-##### Simulation in learning and research
 
 #### Subsection 1.4.5: The $t$-distribution
 
@@ -978,8 +931,6 @@ text(x[ns] + 0.4*chw, ypos, "-ve residual", adj = 0,cex=0.75,col="gray30")
 ```{r 1_18, eval=F}
 ```
 
-##### Which model is best --- line or curve?
-
 #### Subsection 1.5.2: Fitting models -- the model formula
 
 ```{r A5_2a, eval=xtras}
@@ -1100,8 +1051,6 @@ t.test(sleep, conf.level=0.95)
 pt(4.06, 9, lower.tail=F)
 ```
 
-##### The $p$-value probability relates to a decision process
-
 #### Subsection 1.6.3: Use of simulation with $p$-values
 
 ```{r A6_2e}
@@ -1213,11 +1162,8 @@ update(gph, scales=list(tck=0.5), key=key)
 
 #### Subsection 1.6.5: The future for $p$-values
 
-##### How small a $p$-value is needed?
 
 #### Subsection 1.6.6: Reporting results
-
-##### Is there an alternative that is more likely?
 
 ### Section 1.7: Information statistics and Bayesian methods with Bayes Factors
 
@@ -1449,8 +1395,6 @@ knitr::kable(matrix(c("A bare mention","Positive","Strong","Very strong"), nrow=
       midrule='', vline="")
 ```
 
-##### \*Technical details of the family of priors used in the BayesFactor package
-
 ### Section 1.8: Resampling methods for SEs, tests and confidence intervals
 
 #### Subsection 1.8.1: The one-sample permutation test
@@ -1541,11 +1485,7 @@ library(boot)
 boot.ci(boot.out = corr.boot, type = c("perc", "bca"))
 ```
 
-##### The bootstrap -- parting comments
-
 ### Section 1.9: Organizing and managing work, and tools that can assist
-
-##### The RStudio Integrated Development Environment
 
 #### Subsection 1.9.1: Reproducible reporting --- the knitr package
 
@@ -1553,29 +1493,7 @@ boot.ci(boot.out = corr.boot, type = c("perc", "bca"))
 
 #### Subsection 1.10.1: Models and machine learning
 
-##### The limits of current machine learning systems
-
-##### Traps in big data analysis
-
-##### Of mice and machine learning --- missing data values
-
-##### Humans are not good intuitive statisticians
-
 #### Subsection 1.10.2: Replicability is the definitive check
-
-##### To what extent is published work replicable? What is the evidence?
-
-##### Some major replication studies
-
-##### Replicability in pre-clinical cancer research
-
-##### Studies where there may be strong social influences
-
-##### The scientific study of scientific processes
-
-##### Would lowering the $p$-value threshold help?
-
-##### Peer review at the study planning stage
 
 ### Section 1.11: Further, or supplementary, reading
 

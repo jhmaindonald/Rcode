@@ -1,5 +1,5 @@
 ---
-title: "Chapter 9: Multivariate data exploration and discrimination"
+title: "Multivariate data exploration and discrimination"
 output: 
   html_document: default
   pdf_document:
@@ -32,7 +32,7 @@ opts_chunk[['set']](eval=F)
 ## opts_chunk[['set']](eval=T)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 Packages used are: DAAG MASS RColorBrewer teigen BiocManager DAAGbio hddplot lmtest splines cobalt mice datasets car micemd oz randomForest ggplot2 latticeExtra mvtnorm teigen limma hddplot mgcv MatchIt sandwich gridExtra DAAGbio mlbench (exercise).
 
@@ -149,8 +149,6 @@ gph + scale_colour_manual(values=c("m"="blue","f"="red"))  +
 
 #### Subsection 9.1.3: Multi-dimensional scaling
 
-##### Distance measures
-
 ##### Ordination
 
 ```{r 9_4, w=7.25, h=3.6, echo=FALSE, out.width="100%"}
@@ -170,8 +168,6 @@ update(c(gph1, gph2, layout=c(2,1)),
 
 ```{r 9_4, eval=FALSE}
 ```
-
-##### Binary data
 
 ### Section 9.2: Principal component scores in regression
 
@@ -345,8 +341,6 @@ plot(kdat, col=rainbow(4)[kmres$cluster], pch=kmres$cluster+1,
 ```{r 9_11, eval=FALSE}
 ```
 
-##### Comments on $k$-means and hierarchical clustering
-
 #### Subsection 9.3.3: Mixture model-based clustering
 
 ```{r 9_12, w=7, h=2.1, echo=F, top=1.5, mfrow=c(1,3), mgp=c(2.8,0.5,0), out.width='100%'}
@@ -408,8 +402,6 @@ par(fig=c(0,1,0,1))
 ```{r 9_14, eval=FALSE}
 ```
 
-##### Issues of high parametrization and scaling
-
 #### Subsection 9.3.4: Relationship between $k$-means and mixture models
 
 ### Section 9.4: Discriminant analysis
@@ -444,8 +436,6 @@ leafshape17 <- DAAG::leafshape17
 plot(bladelen ~ bladewid, data=leafshape17, pch=c(1,3)[arch+1])
 ## For panel B, specify log="xy" in the call to plot()
 ```
-
-##### Logistic regression, versus linear discriminant analysis
 
 #### Subsection 9.4.2: Logistic regression
 
@@ -494,8 +484,6 @@ cbind(tab, c(tab[1,1], class.acc=tab[2,2])/(tab[,1]+tab[,2]))
 cat("Overall proportion correct =", sum(tab[row(tab)==col(tab)])/sum(tab), "\n")
 ```
 
-##### The function qda(), and other alternatives to lda()
-
 #### Subsection 9.4.4: An example with more than two groups
 
 ```{r I4_4a}
@@ -542,8 +530,6 @@ if (!require("BiocManager", quietly = TRUE))
 BiocManager::install()
 BiocManager::install('limma','multtest')
 ```
-
-##### \*Brief note on mRNA technical issues
 
 #### Subsection 9.5.1: Data and design matrix setup
 
@@ -746,8 +732,6 @@ mtext(side=3, line=-0.275, adj=0.585, "B", outer=TRUE)
 ```{r 9_19, eval=FALSE}
 ```
 
-##### Cross-validation to determine the optimum number of features
-
 ##### Cross-validation for a range of choices of number of features
 
 ```{r I6_3b, cache=FALSE}
@@ -829,8 +813,6 @@ prefix="B-cell subset -", fg='gray')
 ```{r 9_21, eval=FALSE}
 ```
 
-##### The key role of cross-validation
-
 #### Subsection 9.6.5: Estimating contrasts, and calculating False Discovery Rates
 
 ```{r I6_5a}
@@ -853,8 +835,6 @@ summary(decideTests(fit2))
 ## Try also
 ## summary(decideTests(fit2, p.value=0.001))
 ```
-
-##### Distributional extremes
 
 ### Section 9.7: Causal inference from observational data --- balance and matching
 
@@ -1285,15 +1265,7 @@ out <- micemd::overimpute(airq.imp)
 ```{r 9_29, eval=F}
 ```
 
-##### Some further points
-
 ### Section 9.9: Further reading
-
-##### Data with more variables than observations
-
-##### Causal inference
-
-##### Multiple imputation
 
 ### Section 9.10: Exercises
 

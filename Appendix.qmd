@@ -33,7 +33,7 @@ library(knitr)
 opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (plus any dependencies) {-}
+### Packages required (plus any dependencies) {-}
 
 DAAG dplyr tidyr tibble MASS gplots plotrix latticeExtra RColorBrewer
 
@@ -48,8 +48,6 @@ opts_chunk[['set']](cache.path='cache-', out.width="80%", fig.align="center",
                     fig.show='hold', size="small", ps=10, strip.white = TRUE,
                     comment=NA, width=70, tidy.opts = list(replace.assign=FALSE))
 ```
-
-## The R System – A Brief Overview {-}
 
 ### Section 10.1: Getting started with R {-}
 #### Subsection 10.1.1: Learn by typing code at the command line {-}
@@ -123,8 +121,6 @@ sqrt(10)           # Number of digits is determined by current seting
 options(digits=2)  # Change until further notice,
 sqrt(10)
 ```
-
-#####            Wide-ranging information access and searches
 
 ### Section 10.2: R data structures
 #### Subsection 10.2.1: Vectors, dates, and arrays
@@ -214,7 +210,6 @@ ord.stress
 ord.stress >= "medium"
 ```
 
-#####                Missing values in values of factors
 #### Subsection 10.2.3: Operations with data frames
 ```{r J2_5a}
 Cars93sum <- DAAG::Cars93.summary  # Create copy in workspace
@@ -294,7 +289,6 @@ write.csv(CO2byYear, file='gas.csv')                  # Write data frame
 CO2byYear <- read.csv(file="gas.csv", row.names=1)    # Read data back in
 ```
 
-#####   Data input from the RStudio menu --- data frames vs tibbles
 #### Subsection 10.2.6: Issues for working with data frames and tibbles
 #####         Extraction of columns from data frames and tibbles
 ```{r J2_7a}
@@ -696,7 +690,6 @@ text(farleft + 7.5, yline + 4.5 - 0.8 * i, lcode[i +
 ```{r 10_2, eval=F}
 ```
 
-#####                           Font families
 #####                               Colors
 ```{r J6_1b, eval=xtras}
 library(RColorBrewer)

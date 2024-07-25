@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6: Time series models"
+title: "Time series models"
 output: 
   html_document: default
   pdf_document:
@@ -30,7 +30,7 @@ library(knitr)
 ## opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 DAAG ggsci latticeExtra ggplot2 mice car forecast mgcv tseries
 
@@ -558,10 +558,6 @@ garch(x, order = c(0, 1), trace=FALSE)
 ```
 
 ### Section 6.3: Further reading
-
-##### Spatial statistics
-
-##### Other time series models and packages
 
 ### Section 6.4: Exercises
 

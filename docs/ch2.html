@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R Code for ‘A Practical Guide . . .’ - 2&nbsp; Chapter 2: Generalizing from models</title>
+<title>R Code for ‘A Practical Guide . . .’ - 2&nbsp; Generalizing from models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,35 +108,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -238,7 +209,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Generalizing from models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch2.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalizing from models</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -259,55 +230,55 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Learning from data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Learning from data</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch2.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Generalizing from models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalizing from models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Multiple linear regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multiple linear regression</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Chapter 4: Exploiting the linear model framework</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Exploiting the linear model framework</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5: Generalized linear models and survival analysis</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Generalized linear models and survival analysis</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Chapter 6: Time series models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Time series models</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Chapter 7: Multilevel models, and repeated measures</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Multilevel models, and repeated measures</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Chapter 8: Tree-based Classification and Regression</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Tree-based Classification and Regression</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./ch9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Chapter 9: Multivariate data exploration and discrimination</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Multivariate data exploration and discrimination</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -326,7 +297,8 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#section-2.1-model-assumptions" id="toc-section-2.1-model-assumptions" class="nav-link active" data-scroll-target="#section-2.1-model-assumptions">Section 2.1 Model assumptions</a></li>
+  <li><a href="#packages-required-plus-any-dependencies" id="toc-packages-required-plus-any-dependencies" class="nav-link active" data-scroll-target="#packages-required-plus-any-dependencies">Packages required (plus any dependencies)</a></li>
+  <li><a href="#section-2.1-model-assumptions" id="toc-section-2.1-model-assumptions" class="nav-link" data-scroll-target="#section-2.1-model-assumptions">Section 2.1 Model assumptions</a></li>
   <li><a href="#section-2.2-t-statistics-binomial-proportions-and-correlations" id="toc-section-2.2-t-statistics-binomial-proportions-and-correlations" class="nav-link" data-scroll-target="#section-2.2-t-statistics-binomial-proportions-and-correlations">Section 2.2: t-statistics, binomial proportions, and correlations</a></li>
   <li><a href="#section-2.3-extra-binomial-and-extra-poisson-variation" id="toc-section-2.3-extra-binomial-and-extra-poisson-variation" class="nav-link" data-scroll-target="#section-2.3-extra-binomial-and-extra-poisson-variation">Section 2.3 Extra-binomial and extra-Poisson variation</a></li>
   <li><a href="#subsection-2.3.2-technical-details-extra-binomial-or-extra-poisson-variation" id="toc-subsection-2.3.2-technical-details-extra-binomial-or-extra-poisson-variation" class="nav-link" data-scroll-target="#subsection-2.3.2-technical-details-extra-binomial-or-extra-poisson-variation">Subsection 2.3.2: *Technical details – extra-binomial or extra-Poisson variation</a></li>
@@ -347,7 +319,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Chapter 2: Generalizing from models</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Generalizing from models</span></h1>
 </div>
 
 
@@ -379,8 +351,8 @@ window.Quarto = {
 }
 </style>
 </div>
-<section id="packages-required-plus-any-dependencies" class="level5">
-<h5 class="anchored" data-anchor-id="packages-required-plus-any-dependencies">Packages required (plus any dependencies)</h5>
+<section id="packages-required-plus-any-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="packages-required-plus-any-dependencies">Packages required (plus any dependencies)</h3>
 <p>DAAG MASS qra investr HistData BHH2 xtable BayesFactor boot zoo boot MCMCpack,</p>
 <p>Additionally, knitr and Hmisc are required in order to process the Rmd source file.</p>
 </section>
@@ -486,9 +458,6 @@ window.Quarto = {
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Height of cross-fertilised plant"</span>, <span class="at">dubious =</span> <span class="dv">0</span>, <span class="at">cex=</span><span class="fl">0.7</span>, <span class="at">fg=</span><span class="st">'gray'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="what-if-the-standard-deviations-are-unequal" class="level5">
-<h5 class="anchored" data-anchor-id="what-if-the-standard-deviations-are-unequal">What if the standard deviations are unequal?</h5>
-</section>
 </section>
 <section id="subsection-2.2.3-the-normal-approximation-to-the-binomial" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.2.3-the-normal-approximation-to-the-binomial">Subsection 2.2.3: The normal approximation to the binomial</h4>
@@ -592,9 +561,6 @@ window.Quarto = {
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># To agree with hand calculation below, specify correct=FALSE</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(degTAB, <span class="at">correct=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="the-mechanics-of-the-chi-squared-test" class="level5">
-<h5 class="anchored" data-anchor-id="the-mechanics-of-the-chi-squared-test">The mechanics of the chi-squared test</h5>
-</section>
 <section id="an-example-where-a-chi-squared-test-may-not-be-valid" class="level5">
 <h5 class="anchored" data-anchor-id="an-example-where-a-chi-squared-test-may-not-be-valid">An example where a chi-squared test may not be valid</h5>
 <div class="cell">
@@ -628,9 +594,6 @@ window.Quarto = {
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Standardized residuals</span></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="fu">residuals</span>(x2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section>
-<section id="interpretation-issues" class="level5">
-<h5 class="anchored" data-anchor-id="interpretation-issues">Interpretation issues</h5>
 </section>
 </section>
 <section id="section-2.5-issues-for-regression-with-a-single-explanatory-variable" class="level3">
@@ -721,9 +684,6 @@ window.Quarto = {
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="at">caption =</span> <span class="fu">c</span>(<span class="st">"A: Residuals vs Fitted"</span>, <span class="st">"B: Normal Q-Q"</span>,</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="st">"C: Scale-Location"</span>, <span class="st">""</span>, <span class="st">"D: Resids vs Leverage"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="robust-regression" class="level5">
-<h5 class="anchored" data-anchor-id="robust-regression">Robust regression</h5>
-</section>
 </section>
 <section id="subsection-2.5.4-standard-errors-and-confidence-intervals" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.5.4-standard-errors-and-confidence-intervals">Subsection 2.5.4: Standard errors and confidence intervals</h4>
@@ -817,9 +777,6 @@ window.Quarto = {
 <span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab=</span><span class="st">"Girth (in)"</span>, ylab <span class="ot">&lt;-</span> <span class="st">"Height (ft)"</span>, <span class="at">pch=</span><span class="dv">16</span>)</span>
 <span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="fl">0.5</span>, <span class="st">"B"</span>, <span class="at">adj =</span> <span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="an-alternative-to-a-regression-line" class="level5">
-<h5 class="anchored" data-anchor-id="an-alternative-to-a-regression-line">An alternative to a regression line</h5>
-</section>
 </section>
 <section id="subsection-2.5.6-logarithmic-and-power-transformations" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.5.6-logarithmic-and-power-transformations">Subsection 2.5.6: Logarithmic and Power Transformations</h4>
@@ -832,9 +789,6 @@ window.Quarto = {
 <span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>DAAG<span class="sc">::</span><span class="fu">powerplot</span>(<span class="at">expr=</span><span class="st">"x^4"</span>, <span class="at">ylab=</span><span class="st">""</span>)</span>
 <span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>DAAG<span class="sc">::</span><span class="fu">powerplot</span>(<span class="at">expr=</span><span class="st">"exp(x)"</span>, <span class="at">ylab=</span><span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="general-power-transformations-box-cox-and-yeo-johnson" class="level5">
-<h5 class="anchored" data-anchor-id="general-power-transformations-box-cox-and-yeo-johnson">General power transformations — Box-Cox and Yeo-Johnson</h5>
-</section>
 </section>
 <section id="subsection-2.5.7-general-forms-of-nonlinear-response" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.5.7-general-forms-of-nonlinear-response">Subsection 2.5.7: General forms of nonlinear response</h4>
@@ -976,9 +930,6 @@ window.Quarto = {
 <span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(<span class="at">side =</span> <span class="dv">3</span>, <span class="at">line =</span> <span class="fl">0.5</span>, <span class="st">"B"</span>, <span class="at">adj =</span> <span class="dv">0</span>)</span>
 <span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="dv">1</span>,<span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="commentary" class="level5">
-<h5 class="anchored" data-anchor-id="commentary">Commentary</h5>
-</section>
 </section>
 </section>
 <section id="section-2.7-one--and-two-way-comparisons" class="level3">
@@ -1018,9 +969,6 @@ window.Quarto = {
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(tomato.aov)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="other-multiple-comparison-tests" class="level5">
-<h5 class="anchored" data-anchor-id="other-multiple-comparison-tests">Other multiple comparison tests</h5>
-</section>
 </section>
 <section id="subsection-2.7.2-regression-versus-qualitative-comparisons-issues-of-power" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.7.2-regression-versus-qualitative-comparisons-issues-of-power">Subsection 2.7.2: Regression versus qualitative comparisons – issues of power</h4>
@@ -1031,9 +979,6 @@ window.Quarto = {
 </section>
 <section id="subsection-2.7.3-severe-multiplicity-the-false-discovery-rate" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.7.3-severe-multiplicity-the-false-discovery-rate">Subsection 2.7.3: *Severe multiplicity — the false discovery rate</h4>
-<section id="microarrays-and-alternatives-technical-note" class="level5">
-<h5 class="anchored" data-anchor-id="microarrays-and-alternatives-technical-note">*Microarrays and alternatives — technical note</h5>
-</section>
 <section id="the-false-discovery-rate-fdr" class="level5">
 <h5 class="anchored" data-anchor-id="the-false-discovery-rate-fdr">The false discovery rate (FDR)</h5>
 <div class="cell">
@@ -1108,9 +1053,6 @@ window.Quarto = {
 </section>
 <section id="subsection-2.9.2-further-comments-on-bayes-factors" class="level4">
 <h4 class="anchored" data-anchor-id="subsection-2.9.2-further-comments-on-bayes-factors">Subsection 2.9.2: Further comments on Bayes Factors</h4>
-<section id="the-sellke-calibration-upper-limit" class="level5">
-<h5 class="anchored" data-anchor-id="the-sellke-calibration-upper-limit">The Sellke calibration upper limit</h5>
-</section>
 <section id="a-note-on-the-bayesian-information-criterion" class="level5">
 <h5 class="anchored" data-anchor-id="a-note-on-the-bayesian-information-criterion">A note on the Bayesian Information Criterion</h5>
 <div class="cell">
@@ -1150,9 +1092,6 @@ window.Quarto = {
 </section>
 <section id="section-2.10-recap" class="level3">
 <h3 class="anchored" data-anchor-id="section-2.10-recap">Section 2.10: Recap</h3>
-<section id="regress-y-on-x-or-x-ony" class="level5">
-<h5 class="anchored" data-anchor-id="regress-y-on-x-or-x-ony">Regress <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span>, or <span class="math inline">\(x\)</span> on~<span class="math inline">\(y\)</span>?</h5>
-</section>
 </section>
 <section id="section-2.11-further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="section-2.11-further-reading">Section 2.11: Further reading</h3>
@@ -1660,13 +1599,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <input type="hidden" id="giscus-alt-theme" value="dark">
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./ch1.html" class="pagination-link  aria-label=" &lt;span="" 1:="" learning="" from="" data&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Chapter 1: Learning from data</span></span>
+      <a href="./ch1.html" class="pagination-link  aria-label=" &lt;span="" from="" data&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Learning from data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch3.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Chapter 3: Multiple linear regression</span>">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Chapter 3: Multiple linear regression</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch3.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Multiple linear regression</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Multiple linear regression</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

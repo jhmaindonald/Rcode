@@ -1,5 +1,5 @@
 ---
-title: "Chapter 2: Generalizing from models"
+title: "Generalizing from models"
 output: 
   html_document: default
   pdf_document:
@@ -29,7 +29,7 @@ library(knitr)
 opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (plus any dependencies)
+### Packages required (plus any dependencies)
 
 DAAG MASS qra investr HistData BHH2 xtable BayesFactor boot zoo boot MCMCpack,
 
@@ -152,8 +152,6 @@ DAAG::onesamp(dset = DAAG::mignonette, x = "self", y = "cross",
 
 ```{r 2_2, eval=F}
 ```
-
-##### What if the standard deviations are unequal?
 
 #### Subsection 2.2.3: The normal approximation to the binomial
 
@@ -284,8 +282,6 @@ degTAB
 chisq.test(degTAB, correct=FALSE)
 ```
 
-##### The mechanics of the chi-squared test
-
 ##### An example where a chi-squared test may not be valid
 
 ```{r B4c}
@@ -323,8 +319,6 @@ options(digits=2)
 ## Standardized residuals
 residuals(x2)
 ```
-
-##### Interpretation issues
 
 ### Section 2.5 Issues for Regression with a single explanatory variable
 
@@ -425,8 +419,6 @@ caption = c("A: Residuals vs Fitted", "B: Normal Q-Q",
 
 ```{r 2_7, eval=F}
 ```
-
-##### Robust regression
 
 #### Subsection 2.5.4: Standard errors and confidence intervals
 
@@ -535,8 +527,6 @@ mtext(side = 3, line = 0.5, "B", adj = 0)
 ```{r 2_10, eval=F}
 ```
 
-##### An alternative to a regression line
-
 #### Subsection 2.5.6: Logarithmic and Power Transformations
 
 ```{r 2_11, w=6, h=3.6, left=-1, top=1.5, ps=10, tcl=-0.25, mfrow=c(2,3), echo=FALSE, out.width="80%"}
@@ -551,8 +541,6 @@ DAAG::powerplot(expr="exp(x)", ylab="")
 
 ```{r 2_11, eval=F}
 ```
-
-##### General power transformations --- Box-Cox and Yeo-Johnson
 
 #### Subsection 2.5.7: General forms of nonlinear response
 
@@ -708,8 +696,6 @@ abline(1,0)
 ```{r 2_14, eval=F}
 ```
 
-##### Commentary
-
 ### Section 2.7 One- and two-way comparisons
 
 #### Subsection 2.7.1: One-way comparisons
@@ -757,8 +743,6 @@ BHH2::anovaPlot(tomato.aov)
 anova(tomato.aov)
 ```
 
-##### Other multiple comparison tests
-
 #### Subsection 2.7.2: Regression versus qualitative comparisons -- issues of power
 
 ```{r 2_16, w=2.85, h=2.65, left=-1, mgp=c(2,0.5,0), echo=FALSE, out.width="42%"}
@@ -770,8 +754,6 @@ update(gph, par.settings=DAAG::DAAGtheme(color=FALSE, alpha=0.4))
 ```
 
 #### Subsection 2.7.3: \*Severe multiplicity --- the false discovery rate
-
-##### \*Microarrays and alternatives --- technical note
 
 ##### The false discovery rate (FDR)
 
@@ -852,8 +834,6 @@ print(update(gph, scales=list(tck=0.5), par.settings=pars, aspect=0.9),
 
 #### Subsection 2.9.2: Further comments on Bayes Factors
 
-##### The Sellke calibration upper limit
-
 ##### A note on the Bayesian Information Criterion
 
 ```{r B9_2a}
@@ -894,8 +874,6 @@ plot(roller.mcmc, auto.layout=FALSE, ask=FALSE, col="gray", fg="gray")
 ```
 
 ### Section 2.10: Recap
-
-##### Regress $y$ on $x$, or $x$ on\~$y$?
 
 ### Section 2.11: Further reading
 

@@ -1,5 +1,5 @@
 ---
-title: "Chapter 4: Exploiting the linear model framework"
+title: "Exploiting the linear model framework"
 output: 
   html_document: default
   pdf_document:
@@ -29,7 +29,7 @@ library(knitr)
 opts_chunk[['set']](eval=F)
 ```
 
-##### Packages required (with dependencies)
+### Packages required (with dependencies)
 
 DAAG effects mgcv splines scam MASS latticeExtra car WDI AICcmodavg ggplot2 kableExtra qgam patchwork
 
@@ -117,8 +117,6 @@ contr.SAS(fish)
 contr.sum(fish)
 # Base is mean of levels
 ```
-
-##### \*Tests for main effects in the presence of interactions?
 
 ### Section 4.2 Block designs and balanced incomplete block designs
 
@@ -410,8 +408,6 @@ add_header_above(c('lm: grain~' = 3, 'lm: grain~'=3, 'gam: grain~'=3),
                  align='c', monospace=rep(T,3), line=F)
 ```
 
-##### GAM models versus models fitted using lm()
-
 ##### Alternative fits -- what is the best choice?
 
 ```{r D4_3c}
@@ -622,8 +618,6 @@ Box.test(resid(gas.gam)[whiteside$Insul=='After'], lag=1)
 ```
 
 #### Subsection 4.4.7: The remarkable reach of mgcv and related packages
-
-##### Departures from independence assumptions
 
 #### Subsection 4.4.8: Multiple spline smoothing terms --- dewpoint data
 
