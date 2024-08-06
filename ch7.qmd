@@ -24,10 +24,11 @@ output:
 
 ```{r CodeControl, echo=FALSE}
 ## xtras=FALSE
-xtras <- F
+xtras <- FALSE
 library(knitr)
 ## opts_chunk[['set']](results="asis")
-## opts_chunk[['set']](eval=F)
+## opts_chunk[['set']](eval=FALSE)   ## Set to TRUE to execute main part of code
+opts_chunk[['set']](eval=FALSE) 
 ```
 
 ### Packages required (plus any dependencies)

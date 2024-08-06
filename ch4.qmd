@@ -26,7 +26,7 @@ output:
 xtras <- F
 library(knitr)
 ## opts_chunk[['set']](results="asis")
-opts_chunk[['set']](eval=F)
+opts_chunk[['set']](eval=FALSE)
 ```
 
 ### Packages required (with dependencies)

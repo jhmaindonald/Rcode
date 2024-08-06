@@ -11,7 +11,7 @@ project:
 book:
   title: "R Code for 'A Practical Guide . . .'"
   author: "John Maindonald"
-  date: "2024-06-08"
+  date: "2024-08-06"
   downloads: [pdf, docx]
   repo-url: https://github.com/jhmaindonald/Rcode/
   

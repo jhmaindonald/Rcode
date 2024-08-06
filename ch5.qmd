@@ -27,7 +27,7 @@ output:
 xtras <- F
 library(knitr)
 ## opts_chunk[['set']](results="asis")
-opts_chunk[['set']](fig.width=5, fig.height=5, comment=NA, eval=F)
+opts_chunk[['set']](fig.width=5, fig.height=5, comment=NA, eval=FALSE)
 ## opts_chunk[['set']](eval=F)
 ```
 
